@@ -1,3 +1,29 @@
 * {
   box-sizing: border-box;
 }
+
+html {
+  font-size: 16px;
+}
+
+.main-heading {
+  text-transform: uppercase;
+  border-left: 5px solid rgb(123, 11, 123);
+  padding: 0rem 25rem;
+  color: rgb(123, 11, 123);
+  direction: rtl;
+}
+
+.main-paragraph {
+  width: 50ch;
+}
+
+img {
+  width: 500px;
+  height: 280px;
+}
+
+.main-section {
+  width: 500px;
+  height: 280px;
+}
