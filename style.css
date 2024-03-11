@@ -1,29 +1,113 @@
+/* ||General styles and flexbox layout */
+
 * {
   box-sizing: border-box;
-}
-
-html {
   font-size: 16px;
 }
 
+body {
+  background-color: rgb(244, 244, 255);
+  color: rgb(25, 25, 112);
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+/*.........................................................................*/
+
+/* Header styles */
+.header {
+  /* outline: 5px solid red; */
+  width: 50ch;
+  margin-bottom: 3rem;
+}
 .main-heading {
+  font-size: 4rem;
   text-transform: uppercase;
-  border-left: 5px solid rgb(123, 11, 123);
-  padding: 0rem 25rem;
-  color: rgb(123, 11, 123);
+  border-left: 10px solid rgb(25, 25, 112);
+  padding-left: 100%;
+  margin-bottom: 3rem;
+  color: rgb(25, 25, 112);
   direction: rtl;
 }
+/* ......................................................................... */
 
-.main-paragraph {
-  width: 50ch;
-}
-
-img {
-  width: 500px;
-  height: 280px;
-}
-
+/* Main section styles */
 .main-section {
-  width: 500px;
-  height: 280px;
+  width: 50ch;
+  background-color: white;
+  box-shadow: -30px 30px 100px 30px rgba(6, 6, 6, 0.5);
+  border-radius: 5px 5px 5px 5px;
+  position: relative;
+  transition: 2s;
 }
+
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.img-container {
+  aspect-ratio: 16/9;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.subheading {
+  padding: 1rem;
+}
+
+.star {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  transition: transform 2s;
+  filter: grayscale(1);
+  /* z-index: 100; */
+}
+
+.main-section .star-rotate:hover {
+  filter: grayscale(0);
+  transform: scale(1.5) rotate(-80deg);
+}
+
+.main-section:hover .img {
+  transform: scale(1.2);
+}
+
+.main-section:hover {
+  box-shadow: -30px 30px 100px 30px rgba(25, 25, 112, 0.5);
+}
+/* ..................................................................... */
+
+/* Responsiveness and accsibility styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: rgba(4, 4, 63, 0.4);
+  }
+  .main-section {
+    background-color: rgba(47, 30, 43, 0.4);
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .header {
+    width: 75ch;
+  }
+  .main-heading {
+    max-width: 75ch;
+  }
+  .main-paragraph {
+    width: 65ch;
+  }
+}
+/* .................................................................. */

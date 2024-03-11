@@ -10,26 +10,36 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="main-heading">Photo<br />Card</h1>
-        <p class="main-paragraph">
-            On this website you can find a card with a random image from
-            <a href="https://www.unsplash.com">unsplash</a>. Try to focus on
-            creating the main structure of the HTML and CSS first. Then add the
-            details bit by bit. If you make good progress, try to add an animated
-            hover effect for the little icon in the image. Oh, and this paragraph
-            must only be 65 characters wide.
-        </p>
-    </header>
-    <main>
-        <section class="main-section">
-            <img src="https://source.unsplash.com/600x600/?nature" alt="A picture of nature">
-            <h2>Nature</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempore quis, impedit quas tempora quo
-                repellat consequuntur perferendis error, a, placeat reprehenderit non nobis voluptates reiciendis
-                laborum amet illo autem.</p>
-        </section>
-    </main>
+    <div class="flex">
+        <header class="header">
+            <h1 class="main-heading">Photo<br />Card</h1>
+            <p class="main-paragraph">
+                On this website you can find a card with a random image from
+                <a href="https://www.unsplash.com">unsplash</a>. Try to focus on
+                creating the main structure of the HTML and CSS first. Then add the
+                details bit by bit. If you make good progress, try to add an animated
+                hover effect for the little icon in the image. Oh, and this paragraph
+                must only be 65 characters wide.
+            </p>
+        </header>
+        <main>
+            <section class="main-section">
+                <div class="img-container">
+                    <img src="https://source.unsplash.com/600x600/?nature" alt="A picture of nature" class="img">
+                </div>
+                <img src="star.png" alt="Icon of a star" class=" star star-rotate">
+                <div class="subheading">
+                    <h2>Nature</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempore quis, impedit quas
+                        tempora
+                        quo
+                        repellat consequuntur perferendis error, a, placeat reprehenderit non nobis voluptates
+                        reiciendis
+                        laborum amet illo autem.</p>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
