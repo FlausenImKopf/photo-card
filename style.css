@@ -4,7 +4,8 @@
   box-sizing: border-box;
   font-size: 16px;
   --background-color: rgb(244, 244, 255);
-  --color:  rgb(25, 25, 112)
+  --color: rgb(25, 25, 112);
+  --color-light: rgba(4, 4, 63, 0.4)
   --background-color-photocard: white;
   --dark-background-color: rgba(4, 4, 63, 0.4);
   --dark-background-color-photocard: rgba(47, 30, 43, 0.4);
@@ -30,7 +31,6 @@ body {
 
 /* Header styles */
 .header {
-  /* outline: 5px solid red; */
   width: 50ch;
   margin-bottom: 3rem;
 }
@@ -40,7 +40,7 @@ body {
   border-left: 10px solid var(--color);
   padding-left: 100%;
   margin-bottom: 3rem;
-  color: rgb(25, 25, 112);
+  color: var(--color);
   direction: rtl;
 }
 /* ......................................................................... */
@@ -48,7 +48,8 @@ body {
 /* Main section styles */
 .main-section {
   width: 50ch;
-  background-color: white;
+  color: var(--color);
+  background-color: var(--background-color);
   box-shadow: -30px 30px 100px 30px var(--box-shadow);
   border-radius: 5px 5px 5px 5px;
   position: relative;
@@ -63,7 +64,6 @@ body {
 
 .img-container {
   aspect-ratio: 16/9;
-  display: inline-block;
   overflow: hidden;
 }
 
@@ -77,14 +77,13 @@ body {
   right: 20px;
   width: 20px;
   height: 20px;
-  transition: transform 1s;
+  transition: 1s;
   filter: grayscale(1);
-  /* z-index: 100; */
 }
 
 .main-section .star-rotate:hover {
   filter: grayscale(0);
-  transform: scale(1.5) rotate(-80deg);
+  transform: scale(1.5) rotate(-71deg);
 }
 
 .main-section:hover .img {
