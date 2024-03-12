@@ -3,19 +3,17 @@
 * {
   box-sizing: border-box;
   font-size: 16px;
-  --background-color: rgb(244, 244, 255);
-  --color: rgb(25, 25, 112);
-  --color-light: rgba(4, 4, 63, 0.4)
-  --background-color-photocard: white;
-  --dark-background-color: rgba(4, 4, 63, 0.4);
-  --dark-background-color-photocard: rgba(47, 30, 43, 0.4);
-  --box-shadow: rgba(6, 6, 6, 0.5);
-  --box-shadow-hover: rgba(25, 25, 112, 0.5);
+  --background-farbwerte: 244, 244, 255;
+  --color-farbwerte: 25, 25, 112;
+  --card-background-farbwerte: 255, 255, 255;
+  --dark-background-farbwerte: 4, 4, 63;
+  --dark-card-background-farbwerte: 47, 30, 43;
+  --shadow-farbwerte: 6, 6, 6;
 }
 
 body {
-  background-color: var(--background-color);
-  color: var(--color);
+  background-color: rgb(var(--background-farbwerte));
+  color: rgb(var(--color-farbwerte));
   padding: 2rem;
   display: flex;
   flex-direction: row;
@@ -34,23 +32,23 @@ body {
   width: 50ch;
   margin-bottom: 3rem;
 }
-.main-heading {
+.heading {
   font-size: 4rem;
   text-transform: uppercase;
-  border-left: 10px solid var(--color);
+  border-left: 10px solid rgb(var(--color-farbwerte));
   padding-left: 100%;
   margin-bottom: 3rem;
-  color: var(--color);
+  color: rgb(var(--color-farbwerte));
   direction: rtl;
 }
 /* ......................................................................... */
 
-/* Main section styles */
-.main-section {
+/* Card styles */
+.card {
   width: 50ch;
-  color: var(--color);
-  background-color: var(--background-color);
-  box-shadow: -30px 30px 100px 30px var(--box-shadow);
+  color: rgb(var(--color-farbwerte));
+  background-color: rgb(var(--card-background-farbwerte));
+  box-shadow: -30px 30px 100px 30px rgba(var(--shadow-farbwerte), 0.5);
   border-radius: 5px 5px 5px 5px;
   position: relative;
   transition: 2s;
@@ -67,7 +65,7 @@ body {
   overflow: hidden;
 }
 
-.subheading {
+.card-caption {
   padding: 1rem;
 }
 
@@ -81,27 +79,28 @@ body {
   filter: grayscale(1);
 }
 
-.main-section .star-rotate:hover {
+.card .star-transform:hover {
   filter: grayscale(0);
   transform: scale(1.5) rotate(-71deg);
 }
 
-.main-section:hover .img {
+.card:hover .img {
   transform: scale(1.2);
 }
 
-.main-section:hover {
-  box-shadow: -30px 30px 100px 30px var(--box-shadow-hover);
+.card:hover {
+  box-shadow: -30px 30px 100px 30px rgba(var(--color-farbwerte), 0.5);
 }
 /* ..................................................................... */
 
 /* Responsiveness and accsibility styles */
 @media (prefers-color-scheme: dark) {
   body {
-    background: var(--dark-background-color);
+    background: rgba(var(--dark-background-farbwerte), 0.4);
   }
-  .main-section {
-    background-color: var(--dark-background-color-photocard);
+  .card {
+    background-color: rgb(var(--color-farbwerte));
+    color: rgba(var(--background-farbwerte), 0.7);
   }
 }
 
@@ -109,10 +108,10 @@ body {
   .header {
     width: 75ch;
   }
-  .main-heading {
+  .heading {
     max-width: 75ch;
   }
-  .main-paragraph {
+  .text {
     width: 65ch;
   }
 }
