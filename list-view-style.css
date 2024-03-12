@@ -107,16 +107,19 @@ body {
 }
 /* ..................................................................... */
 
-/* footer styles */
+/* footer styles and grid layout for footer*/
 .footer {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr;
+  justify-content: space-between;
 }
 
 .footer-item {
   border-left: 3px solid rgb(var(--color-farbwerte));
-  max-width: 25ch;
+  max-width: 20ch;
+  max-height: 20ch;
   padding-inline: 1rem;
+  overflow: hidden;
 }
 
 .footer-icon {

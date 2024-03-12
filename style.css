@@ -1,4 +1,4 @@
-/* ||General styles and flexbox layout */
+/* ||General styles and grid layout for body */
 
 *,
 *::before,
@@ -17,15 +17,29 @@ body {
   background-color: rgb(var(--background-farbwerte));
   color: rgb(var(--color-farbwerte));
   padding: 2rem;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 0.25fr 0.25fr 1fr 0.25fr 0.25fr;
+  grid-template-rows: auto auto auto;
   justify-content: center;
 }
+.header {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.main {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
 
-.flex {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 /*.........................................................................*/
 
@@ -54,7 +68,7 @@ body {
   border-radius: 5px 5px 5px 5px;
   position: relative;
   transition: 2s;
-  margin-bottom: 3rem;
+  margin-bottom: 12rem;
 }
 
 .img {
@@ -68,7 +82,11 @@ body {
   overflow: hidden;
 }
 
-.card-caption {
+.card-heading {
+  padding-inline: 1rem;
+}
+
+.card-text {
   padding: 1rem;
 }
 
@@ -96,16 +114,20 @@ body {
 }
 /* ..................................................................... */
 
-/* footer styles */
+/* footer styles and grid layout for footer*/
 .footer {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr;
+  justify-content: space-between;
 }
 
 .footer-item {
   border-left: 3px solid rgb(var(--color-farbwerte));
   max-width: 25ch;
   padding-inline: 1rem;
+  max-height: 20ch;
+  max-width: 20ch;
+  overflow: hidden;
 }
 
 .footer-icon {
