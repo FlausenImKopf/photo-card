@@ -53,3 +53,16 @@ Beim Hovern über die Karte soll sich das Bild etwas vergrößern und der Schatt
 ### 2. Dark Mode:
 Fügt über einen prefers-color-scheme: dark Media Query einen Dark Mode hinzu. Nutzt hierfür Custom Properties.Photocard project
 
+### 3. Add a Footer:
+Fügt der Website einen dreispaltigen Footer hinzu. Das Footer Design soll Font Awesome Icons enthalten und von der Struktur so aussehen wie der Beispiel Screenshot:
+![image](https://github.com/FlausenImKopf/photo-card-nachbau-mit-sandra/assets/88251068/1c67ae51-b303-4f41-aa00-277c10452bcd)
+
+### 4. Create a list view:
+Erstelle ein zweites Stylesheet das du ergänzend zum ersten in die index.html Seite einfügst. Update deinen CSS Code im neuen Stylesheet so, dass die Karte als "List View" dargestellt wird:
+![image](https://github.com/FlausenImKopf/photo-card-nachbau-mit-sandra/assets/88251068/2836322b-9136-46c1-a73a-3ebb1ba49266)
+
+
+
+
+
+
