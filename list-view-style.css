@@ -47,14 +47,14 @@ body {
 
 /* Card styles */
 .card {
-  width: 75ch;
+  width: 50ch;
   height: 5ch;
   color: rgb(var(--color-farbwerte));
   background-color: rgb(var(--card-background-farbwerte));
-  box-shadow: -30px 30px 100px 30px rgba(var(--shadow-farbwerte), 0.5);
+  box-shadow: 0px 10px 10px 1px rgba(var(--shadow-farbwerte), 0.2);
   border-radius: 5px 5px 5px 5px;
   position: relative;
-  transition: 2s;
+  transition: transform 2s;
   margin-bottom: 12rem;
   display: flex;
 }
@@ -76,7 +76,7 @@ body {
 }
 
 .card-text {
-  max-width: 55ch;
+  max-width: 30ch;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -103,7 +103,7 @@ body {
 }
 
 .card:hover {
-  box-shadow: -30px 30px 100px 30px rgba(var(--color-farbwerte), 0.5);
+  box-shadow: 0px 10px 10px 1px rgba(var(--color-farbwerte), 0.3);
 }
 /* ..................................................................... */
 
@@ -143,6 +143,12 @@ body {
   }
   .text {
     width: 65ch;
+  }
+  .card {
+    width: 75ch;
+  }
+  .card-text {
+    max-width: 50ch;
   }
 }
 /* .................................................................. */
