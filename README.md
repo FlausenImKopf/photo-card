@@ -1,6 +1,6 @@
 # Photocard Project
 
-In dieser Aufgabe im Bootcamp sollten wir ein Website-Layout basierend auf Screenshots und einem Video nachbauen. 
+In dieser Aufgabe im Bootcamp sollten wir ein Website-Layout basierend auf Screenshots und Videos nachbauen. 
 
 ![image](https://github.com/FlausenImKopf/photo-card-nachbau-mit-sandra/assets/88251068/72b1a254-783c-49bf-a834-b2f328bbcb0a)
 
