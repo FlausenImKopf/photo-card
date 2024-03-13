@@ -61,6 +61,9 @@ Fügt der Website einen dreispaltigen Footer hinzu. Das Footer Design soll Font 
 Erstelle ein zweites Stylesheet das du ergänzend zum ersten in die index.html Seite einfügst. Update deinen CSS Code im neuen Stylesheet so, dass die Karte als "List View" dargestellt wird:
 ![image](https://github.com/FlausenImKopf/photo-card-nachbau-mit-sandra/assets/88251068/2836322b-9136-46c1-a73a-3ebb1ba49266)
 
+### 5. Beide Stylesheets in index verlinken
+Das List-View Stylesheet soll im Sinne von responsive design via media query eingebettet werden.
+
 
 
 
