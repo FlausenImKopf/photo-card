@@ -1,4 +1,4 @@
-/* ||General styles and flexbox layout */
+/* ||General styles and grid layout for body */
 
 *,
 *::before,
@@ -17,21 +17,36 @@ body {
   background-color: rgb(var(--background-farbwerte));
   color: rgb(var(--color-farbwerte));
   padding: 2rem;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 0.25fr 0.25fr 1fr 0.25fr 0.25fr;
+  grid-template-rows: auto auto auto;
   justify-content: center;
 }
 
-.flex {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
+.header {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.main {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 /*.........................................................................*/
 
 /* Header styles */
 .header {
-  width: 50ch;
+  /* width: 50ch; */
   margin-bottom: 3rem;
 }
 .heading {
@@ -47,7 +62,8 @@ body {
 
 /* Card styles */
 .card {
-  width: 50ch;
+  width: 90vw;
+  max-width: 75ch;
   height: 5ch;
   color: rgb(var(--color-farbwerte));
   background-color: rgb(var(--card-background-farbwerte));
@@ -76,7 +92,7 @@ body {
 }
 
 .card-text {
-  max-width: 30ch;
+  max-width: 60%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -110,7 +126,7 @@ body {
 /* footer styles and grid layout for footer*/
 .footer {
   display: grid;
-  grid-template-columns: 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr;
+  grid-template-columns: auto 1fr auto 1fr auto 1fr;
   justify-content: space-between;
 }
 
@@ -146,12 +162,6 @@ body {
   }
   .text {
     width: 65ch;
-  }
-  .card {
-    width: 75ch;
-  }
-  .card-text {
-    max-width: 50ch;
   }
 }
 /* .................................................................. */
