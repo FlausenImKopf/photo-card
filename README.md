@@ -1,12 +1,15 @@
 # Photocard Project
 
-In dieser Aufgabe im Bootcamp sollten wir ein Website-Layout basierend auf Screenshots und Videos nachbauen. 
+> Created during my time [@CodingBootcampsEurope](https://github.com/coding-bootcamps-eu).
+> This repo was just for learning purposes and is not cleaned up.
+
+In this task we were asked to recreate the following website based on a screenshot and a video using html and css.
 
 ![image](https://github.com/FlausenImKopf/photo-card-nachbau-mit-sandra/assets/88251068/72b1a254-783c-49bf-a834-b2f328bbcb0a)
 
 https://github.com/coding-bootcamps-eu/2024-02/blob/main/Vollzeit/2024-03-08/task/photo_card_website.mp4
 
-## Wir hatten einen vorgebenen HTML Start Code:
+## This was the given html skeleton:
 
 ```html
 <!DOCTYPE html>
@@ -41,28 +44,26 @@ https://github.com/coding-bootcamps-eu/2024-02/blob/main/Vollzeit/2024-03-08/tas
 </html>
 ```
 
-## Und es war vorgegeben mit welchem Bild-Link wir arbeiten sollten:
+## This image link was provided
 
 https://source.unsplash.com/600x600/?nature
 
-## Danach wurde die Aufgabe um feature requests erweitert:
+## These were some added feature requests:
 
 ### 1. Add subtle Transition:
-Beim Hovern über die Karte soll sich das Bild etwas vergrößern und der Schatten der Karte soll die Farbe des Seiten-Textes bekommen. Achtet darauf, dass das Bild innerhalb der Karte bleibt.
+Add a hover effect to the card: the image is supposed to get slightly bogger and the card shadow changes to colour. Make sure the image stays within the limits of the card.
 
 ### 2. Dark Mode:
-Fügt über einen prefers-color-scheme: dark Media Query einen Dark Mode hinzu. Nutzt hierfür Custom Properties.Photocard project
+Add a media query prefers-color-scheme dark. Use custom properties for the color scheme
 
 ### 3. Add a Footer:
-Fügt der Website einen dreispaltigen Footer hinzu. Das Footer Design soll Font Awesome Icons enthalten und von der Struktur so aussehen wie der Beispiel Screenshot:
+Add a three-fold footer. The footer design should contain Font Awesome icons and be structured like the following example:
 ![image](https://github.com/FlausenImKopf/photo-card-nachbau-mit-sandra/assets/88251068/1c67ae51-b303-4f41-aa00-277c10452bcd)
 
 ### 4. Create a list view:
-Erstelle ein zweites Stylesheet das du ergänzend zum ersten in die index.html Seite einfügst. Update deinen CSS Code im neuen Stylesheet so, dass die Karte als "List View" dargestellt wird:
+Create a second stylesheet. The second stylesheet should have the styles for a "list view" of the photocards. Use a media query to make your website more responsive with this "list view" stylesheet.
 ![image](https://github.com/FlausenImKopf/photo-card-nachbau-mit-sandra/assets/88251068/2836322b-9136-46c1-a73a-3ebb1ba49266)
 
-### 5. Beide Stylesheets in index verlinken
-Das List-View Stylesheet soll im Sinne von responsive design via media query eingebettet werden.
 
 
 
